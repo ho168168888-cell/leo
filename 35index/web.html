@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>專業證照展覽館 | 張仁人</title>
+  <style>
+    :root {
+      --primary-color: #1A365D;
+      --accent-color: #3182CE;
+      --bg-color: #F7FAFC;
+      --card-bg: #FFFFFF;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      color: var(--primary-color);
+    }
+
+    .header-title {
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      color: var(--primary-color);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .cert-card {
+      background-color: var(--card-bg);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      cursor: pointer;
+      text-decoration: none;
+      display: block;
+    }
+
+    .cert-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .img-container {
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+      background-color: #eee;
+    }
+
+    .img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.5s ease;
+    }
+
+    .cert-card:hover .img-container img {
+      transform: scale(1.08);
+    }
+
+    .cert-info {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .cert-info h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.2rem;
+      color: var(--primary-color);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 5px 12px;
+      background-color: var(--accent-color);
+      color: white;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    .badge.accounting { background-color: #E53E3E; }
+    .badge.national { background-color: #38A169; }
+  </style>
+</head>
+<body>
+
+  <h1 class="header-title">張仁人 專業證照展示</h1>
+
+  <div class="gallery-grid">
+    
+    <a href="專業認證.jpg" target="_blank" class="cert-card">
+      <div class="img-container">
+        <img src="專業認證.jpg" alt="會計專業認證">
+      </div>
+      <div class="cert-info">
+        <h3>會計專業認證</h3>
+        <span class="badge accounting">會計專業</span>
+      </div>
+    </a>
+
+    <a href="會計能力測驗一級.jpg" target="_blank" class="cert-card">
+      <div class="img-container">
+        <img src="會計能力測驗一級.jpg" alt="會計能力測驗一級">
+      </div>
+      <div class="cert-info">
+        <h3>會計能力測驗一級</h3>
+        <span class="badge accounting">會計專業</span>
+      </div>
+    </a>
+
+    <a href="張仁人.jpg" target="_blank" class="cert-card">
+      <div class="img-container">
+        <img src="張仁人.jpg" alt="電腦軟體應用丙級">
+      </div>
+      <div class="cert-info">
+        <h3>電腦軟體應用 丙級</h3>
+        <span class="badge national">國家檢定</span>
+      </div>
+    </a>
+
+    <a href="1 E.jpg" target="_blank" class="cert-card">
+      <div class="img-container">
+        <img src="1 E.jpg" alt="Excel 2016 進階級">
+      </div>
+      <div class="cert-info">
+        <h3>TQC Excel 進階級</h3>
+        <span class="badge">資料運算分析</span>
+      </div>
+    </a>
+
+    <a href="1 P.jpg" target="_blank" class="cert-card">
+      <div class="img-container">
+        <img src="1 P.jpg" alt="PowerPoint 2016 進階級">
+      </div>
+      <div class="cert-info">
+        <h3>TQC PowerPoint 進階級</h3>
+        <span class="badge">商業簡報能力</span>
+      </div>
+    </a>
+
+    <a href="1 W.jpg" target="_blank" class="cert-card">
+      <div class="img-container">
+        <img src="1 W.jpg" alt="Word 2021 實用級">
+      </div>
+      <div class="cert-info">
+        <h3>TQC Word 實用級</h3>
+        <span class="badge">文書排版處理能力</span>
+      </div>
+    </a>
+
+    <a href="1 中.jpg" target="_blank" class="cert-card">
+      <div class="img-container">
+        <img src="1 中.jpg" alt="中文輸入進階級">
+      </div>
+      <div class="cert-info">
+        <h3>TQC 中文輸入進階級</h3>
+        <span class="badge">基礎資訊能力</span>
+      </div>
+    </a>
+
+    <a href="1 英.jpg" target="_blank" class="cert-card">
+      <div class="img-container">
+        <img src="1 英.jpg" alt="英文輸入實用級">
+      </div>
+      <div class="cert-info">
+        <h3>TQC 英文輸入實用級</h3>
+        <span class="badge">基礎資訊能力</span>
+      </div>
+    </a>
+
+  </div>
+
+</body>
+</html>
